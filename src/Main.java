@@ -47,7 +47,7 @@ class Main
             AlmacenaFigura almacen = ((Cargar) cargador).getAlmacenfiguras();
             almacen.mostrar();
 
-            AbstractCriterio a = new CreadorCriterio();
+            CreadorCriterio a = new CreadorCriterio();
             a.mostrarcriterios(almacen.getNombreAlmacena());
 
             FormaPresentar FP = new FormaPresentar();
@@ -58,7 +58,7 @@ class Main
             while (!(nomcriterio = readLn(255)).equals("Fin"))
             {
 
-                Criterio tipocriterio = a.creartipocriterio(nomcriterio);
+                Criterio tipocriterio = a.crearTipoCriterio(nomcriterio);
 
                 AlgoritmoClasificador algoritmoclasificador = new AlgoritmoClasificador(almacen, tipocriterio);
                 algoritmoclasificador.ejecutar();

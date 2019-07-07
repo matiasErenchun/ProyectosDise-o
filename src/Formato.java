@@ -1,11 +1,12 @@
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.*;
 
 /**
  * 
  */
-public abstract class Formato implements AlmacenaFigura {
+public abstract class Formato extends AlmacenaFigura {
 
     /**
      * Default constructor
@@ -20,7 +21,7 @@ public abstract class Formato implements AlmacenaFigura {
      * @param br 
      * @return
      */
-    public abstract AlmacenaFigura parser(String cabecera, BufferedReader br);
+    public abstract AlmacenaFigura parser(String cabecera, BufferedReader br) throws IOException;
 
     /**
      * 

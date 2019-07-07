@@ -15,20 +15,15 @@ public class Hexaedro extends Figura3D {
     /**
      * 
      */
-    private almacen AlmacenaFigura;
-
     /**
      * @param tipo 
      * @param lista
      */
-    public void Hexaedro(String tipo, void lista) {
+    public  Hexaedro(String tipo, Iterador lista) {
         // TODO implement here
     }
 
-    /**
-     * @param AlmacenaFigura almacen
-     */
-    public void addalmacenhexa(void AlmacenaFigura almacen) {
+    public void addalmacenhexa( AlmacenaFigura almacen) {
         // TODO implement here
     }
 

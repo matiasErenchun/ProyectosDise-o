@@ -15,15 +15,8 @@ public class Tetraedro extends Figura3D {
     /**
      * 
      */
-    public void Tetraedro() {
-        // TODO implement here
-    }
 
-    /**
-     * @param tipo 
-     * @param lista
-     */
-    public void Tetraedro(String tipo, Iterador lista) {
+    public  Tetraedro(String tipo, Iterador lista) {
         // TODO implement here
     }
 

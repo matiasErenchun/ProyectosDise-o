@@ -31,4 +31,9 @@ public class ListaPuntos extends AbstractLista {
         assert this.invariante():"Error de Invariante ListPunt GetPunt";
         return listapuntos[pos];
     }
+
+    public int getLargo()
+    {
+        return this.listapuntos.length;
+    }
 }

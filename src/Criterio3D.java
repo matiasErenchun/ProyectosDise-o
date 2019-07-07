@@ -1,6 +1,6 @@
 import java.util.Set;
 
-public abstract class Criterio3D
+public abstract class Criterio3D extends Criterio
 {
     private Set<String> arraycriterio3d;
     private Criterio2D criterio2D;
@@ -17,7 +17,7 @@ public abstract class Criterio3D
 
     public abstract void ejecutar(AlmacenaFigura al);
 
-    public abstract String getresultados();
+    public abstract String[] getresultados();
 
     public abstract String getformato();
 

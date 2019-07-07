@@ -9,7 +9,14 @@ public class Triangulo extends Figura2D {
     /**
      * Default constructor
      */
-    public Triangulo() {
+    public Triangulo(String tipo, Iterador lista)
+    {
+        // TODO implement here
+    }
+
+    public Triangulo()
+    {
+
     }
 
     /**
@@ -25,16 +32,7 @@ public class Triangulo extends Figura2D {
     /**
      * 
      */
-    public void Triangulo() {
-        // TODO implement here
-    }
 
-    /**
-     * @param tipo 
-     * @param lista
-     */
-    public void Triangulo(String tipo, Iterador lista) {
-        // TODO implement here
-    }
+
 
 }

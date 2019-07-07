@@ -1,6 +1,6 @@
 public abstract class Criterio
 {
-    public abstract void mostrarcriterios();
+    public abstract void mostrarcriterios(String criterio);
 
     public abstract void ejecutar(AlmacenaFigura al);
 

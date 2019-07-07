@@ -4,7 +4,14 @@ public class FormaPresentar
 
     public FormaPresentar crearformapresentar(String forma)
     {
-
+        if(forma.equals("Tabla"))
+        {
+            return new PresentaTabla();
+        }
+        else
+        {
+            return new PresentaTexto();
+        }
     }
 
     public void mostrarformapresentar()

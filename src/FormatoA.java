@@ -24,20 +24,24 @@ public class FormatoA extends Formato {
         Figura figura = null;
         Figura vecfiguras[] = new Figura[20];
         int x, y, z;
-        while ((linea = br.readLine()) != null) {
+        while ((linea = br.readLine()) != null)
+        {
             System.out.println(linea);
             entrada = new StringTokenizer(linea);
-            while (entrada.hasMoreTokens()) {
+            while (entrada.hasMoreTokens())
+            {
                 tipofigura = entrada.nextToken();
                 linea2 = br.readLine();
                 entrada2 = new StringTokenizer(linea2);
                 AbstractLista lista = new ListaPuntos();
 
-                while (entrada2.hasMoreTokens()) {
+                while (entrada2.hasMoreTokens())
+                {
                     z = 0;
                     x = Integer.parseInt(entrada2.nextToken());
                     y = Integer.parseInt(entrada2.nextToken());
-                    if (cabecera.equals("3D")) {
+                    if (cabecera.equals("3D"))
+                    {
                         z = Integer.parseInt(entrada2.nextToken());
                     }
                     //System.out.println("Datos ingresandos ->x= " + x + " y= " + y);
@@ -46,9 +50,16 @@ public class FormatoA extends Formato {
                 }
                 Iterador iteralista;
                 iteralista = lista.creadorIterador();
-
-                Creador creadorfigura = new CreadorConcreto();
-                figura = creadorfigura.crearFigura(tipofigura, iteralista);
+                CreadorFigura creadorFigura;
+                if(cabecera.equals("3D"))
+                {
+                    creadorFigura=new CradorFigura3D();
+                }
+                else
+                {
+                    creadorFigura=new CreadorFigura2D();
+                }
+                figura = creadorFigura.crearFigura(tipofigura, iteralista);
             }
             vecfiguras[contadorfiguras] = figura;
             contadorfiguras++;

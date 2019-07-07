@@ -15,15 +15,8 @@ public class Cuadrilatero extends Figura2D {
     /**
      * 
      */
-    public void Cuadrilatero() {
-        // TODO implement here
-    }
 
-    /**
-     * @param tipo 
-     * @param lista
-     */
-    public void Cuadrilatero(String tipo, void lista) {
+    public  Cuadrilatero(String tipo, Iterador lista) {
         // TODO implement here
     }
 

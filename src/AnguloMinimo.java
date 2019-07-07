@@ -91,7 +91,8 @@ public class AnguloMinimo extends Criterio2D {
      */
     public String[] getresultados()
     {
-        return "";
+        String[]p={""};
+        return p;
     };
 
 }

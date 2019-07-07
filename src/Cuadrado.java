@@ -16,15 +16,10 @@ public class Cuadrado extends Figura2D {
      * @param tipo 
      * @param lista
      */
-    public void Cuadrado(String tipo, void lista) {
+    public  Cuadrado(String tipo, Iterador lista) {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
-    public void Cuadrado() {
-        // TODO implement here
-    }
+
 
 }
