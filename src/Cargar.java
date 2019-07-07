@@ -3,27 +3,38 @@ import java.io.*;
  *
  * @author Luis Gregorio
  */
-public class Cargar extends Comandos {
+public class Cargar extends Comando
+{
 
     private AlmacenaFigura almacenfiguras;
     private String nombrearchivo;
 
-    private boolean invariante(){
+    private boolean invariante()
+    {
         return almacenfiguras!=null;
     }
 
-    public Cargar(String nombre) {
+    public Cargar(String nombre)
+    {
         assert nombre!=null:"Error Constructor Cargar";
         this.nombrearchivo = nombre;
     }
-    public void ejecutar() {
+
+    public AlmacenaFigura getAlmacenfiguras()
+    {
+        return almacenfiguras;
+    }
+
+    public void ejecutar()
+    {
 
         String cabeceratipo;
         File archivos = null;
         FileReader fr = null;
         BufferedReader br = null;
 
-        try {
+        try
+        {
             // Apertura del fichero y creacion de BufferedReader para poder
             // hacer una lectura comoda (disponer del metodo readLine()).
             archivos = new File("/Users/lsilvest/Documents/Eclipse Standar Luna/workspace/ProyectoDis_1_2019/src/" + nombrearchivo);
@@ -43,23 +54,26 @@ public class Cargar extends Comandos {
 
             assert this.invariante(): "Error de Invariante Cargar";
 
-        } catch (Exception e) {
+        } catch (Exception e)
+        {
             e.printStackTrace();
-        } finally {
+        }
+        finally
+        {
             // En el finally cerramos el fichero, para asegurarnos
             // que se cierra tanto si todo va bien como si salta
             // una excepcion.
-            try {
-                if (null != fr) {
+            try
+            {
+                if (null != fr)
+                {
                     fr.close();
                 }
-            } catch (Exception e2) {
+            } catch (Exception e2)
+            {
                 e2.printStackTrace();
             }
         }
     }
 
-    public AlmacenaFigura getFiguras() {
-        return almacenfiguras;
-    }
 }

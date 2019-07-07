@@ -33,7 +33,7 @@ public class Triangulo extends Figura2D {
      * @param tipo 
      * @param lista
      */
-    public void Triangulo(String tipo, void lista) {
+    public void Triangulo(String tipo, Iterador lista) {
         // TODO implement here
     }
 

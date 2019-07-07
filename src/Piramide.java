@@ -23,7 +23,7 @@ public class Piramide extends Figura3D {
      * @param tipo 
      * @param lista
      */
-    public void Piramide(String tipo, void lista) {
+    public void Piramide(String tipo, Iterador lista) {
         // TODO implement here
     }
 

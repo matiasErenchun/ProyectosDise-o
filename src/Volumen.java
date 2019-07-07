@@ -67,14 +67,4 @@ public class Volumen extends Criterio3D {
         // TODO implement here
     }
 
-    /**
-     * @param al
-     */
-    public abstract void ejecutar(AlmacenaFigura al);
-
-    /**
-     * @return
-     */
-    public abstract String getresultados();
-
 }

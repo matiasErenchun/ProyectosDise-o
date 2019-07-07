@@ -91,14 +91,4 @@ public class AnguloDiedroMinimo extends Criterio3D {
         return "";
     }
 
-    /**
-     * @param al
-     */
-    public abstract void ejecutar(AlmacenaFigura al);
-
-    /**
-     * @return
-     */
-    public abstract String getresultados();
-
 }

@@ -16,7 +16,7 @@ public abstract class Criterio2D extends Criterio
 
     public abstract void ejecutar(AlmacenaFigura al);
 
-    public abstract String getresultados();
+    public abstract String[] getresultados();
 
     public abstract String getformato();
 

@@ -1,6 +1,3 @@
-
-import java.util.*;
-
 /**
  * 
  */
@@ -15,7 +12,7 @@ public class AnguloMaximo extends Criterio2D {
     /**
      * @return
      */
-    public String getresultados() {
+    public String[] getresultados() {
         // TODO implement here
         return "";
     }
@@ -70,11 +67,9 @@ public class AnguloMaximo extends Criterio2D {
     /**
      * @param al
      */
-    public abstract void ejecutar(AlmacenaFigura al);
 
     /**
      * @return
      */
-    public abstract String getresultados();
 
 }

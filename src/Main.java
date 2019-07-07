@@ -42,10 +42,9 @@ class Main
 
         while (!(nombrearchivo = readLn(255)).equals("Fin"))
         {
-            Comandos cargar = new Cargar(nombrearchivo);
-            cargar.ejecutar();
+            Comando cargador = new Cargar(nombrearchivo);
 
-            AlmacenaFigura almacen = cargar.getFiguras();
+            AlmacenaFigura almacen = ((Cargar) cargador).getAlmacenfiguras();
             almacen.mostrar();
 
             AbstractCriterio a = new CreadorCriterio();

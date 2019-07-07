@@ -17,7 +17,7 @@ public class Figura {
         assert lista!=null:"Error de Contrato Figura";
         int i = 0;
         for (lista.first(); lista.isDone(); lista.next()) {
-            puntos[i] = lista.currentItem();
+            puntos[i] = (Punto) lista.currentItem();
             i++;
         }
         this.numPuntos = i;
